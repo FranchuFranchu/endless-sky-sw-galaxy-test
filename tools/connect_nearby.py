@@ -23,7 +23,6 @@ with open("data/map.txt") as f:
 for pos, name in system_names.items():
 	links = [system_names[i] for i in sorted(system_pos.values(), key=lambda i: distance(pos, i))[:4]]
 	links = list(filter(lambda i: name != i and i.strip(), links))
-	print(links)
 	s = s.replace(f"pos {pos[0]} {pos[1]}", 
 		f"pos {pos[0]} {pos[1]}\n\t" 
 			+ '\n\t'.join([
