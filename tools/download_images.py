@@ -18,7 +18,7 @@ pixel_y = int(common.size_y / z ** 2)
 for x in range(0, z ** 2):
 	for y in range(0, z ** 2):
 		filename = f"images/ui/sw_{x}_{y}.png"
-		#download_image(fmt.format(z=z, x=x, y=y), filename)
+		download_image(fmt.format(z=z, x=x, y=y), filename)
 		filename = filename[len("images/"):]
 		filename = filename[:-len(".png")]
 		print(galaxyf.format(
@@ -32,4 +32,4 @@ for x in range(0, z ** 2):
 
 from os import system
 
-#system(f'mogrify -auto-orient -thumbnail {pixel_x}x{pixel_y}! "images/ui/*.png"')
+system(f'mogrify -auto-orient -thumbnail {pixel_x}x{pixel_y}! "images/ui/*.png"')

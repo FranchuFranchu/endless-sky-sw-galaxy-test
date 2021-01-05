@@ -21,13 +21,13 @@ event "Test: Link"
 		add object "Wormhole SW"
 			distance 300 
 			period 300
-			sprite "sprite/wisp_green"
+			sprite "planet/wormhole"
 	planet "New Boston"
 		outfitter "Test Outfitter"
 	system "Mortis"
 		add object "Wormhole SW"
 			distance 300 
 			period 300
-			sprite "sprite/wisp_green"
+			sprite "planet/wormhole"
 			
 planet "Wormhole SW"
