@@ -1,4 +1,5 @@
 from endless_sky.datafile import DataFile
+import common
 
 f = DataFile("data/map.txt")
 
@@ -19,9 +20,14 @@ def distance(p1, p2):
 
 with open("data/map.txt") as f:
 	s = f.read()
+
+from json import load	
+
 	
 for pos, name in system_names.items():
-	links = [system_names[i] for i in sorted(system_pos.values(), key=lambda i: distance(pos, i))[:4]]
+	links = [system_names[i] for i in sorted(
+		system_pos.values()
+	, key=lambda i: distance(pos, i))[:4]]
 	links = list(filter(lambda i: name != i and i.strip(), links))
 	s = s.replace(f"pos {pos[0]} {pos[1]}", 
 		f"pos {pos[0]} {pos[1]}\n\t" 
