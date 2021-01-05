@@ -6,3 +6,9 @@ outfit "OP JD"
 
 outfitter "developer"
 	"OP JD"
+	"Full Map"
+
+outfit "Full Map"
+	category "Special"
+	map 4000
+	

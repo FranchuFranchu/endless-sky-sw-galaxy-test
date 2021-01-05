@@ -32,4 +32,4 @@ for x in range(0, z ** 2):
 
 from os import system
 
-system(f'mogrify -auto-orient -thumbnail {pixel_x}x{pixel_y}! "images/ui/*.png"')
+#system(f'mogrify -auto-orient -thumbnail {pixel_x}x{pixel_y}! "images/ui/*.png"')
