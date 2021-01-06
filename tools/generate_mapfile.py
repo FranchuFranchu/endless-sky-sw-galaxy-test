@@ -5,6 +5,7 @@ from math import radians, copysign
 from sys import stderr
 from common import mercator_y_transform
 import common
+from common import transform_latitude
 
 url_sys = "http://1.gusc.cartocdn.com/hbernberg/api/v1/map/6d07251cec293f14ef440bb0a2411372:1577570329193/4/{z}/{x}/{y}.grid.json"
 
@@ -82,11 +83,7 @@ planet "{name}"
 	spaceport "{name}_SPACEPORT"
 '''
 
-def complexless_power(x, y):
-	return copysign(abs(x) ** y, x)
 
-def transform_latitude(x):
-	return complexless_power(-mercator_y_transform(radians(x)) * common.scale_y * 1.3, 0.999) + common.offy
 
 for i in systems.values():
 	if i.get("long") is None:

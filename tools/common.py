@@ -1,5 +1,7 @@
 import math
 
+from math import radians, copysign
+
 offx = 197700
 offy = 250500
 
@@ -20,3 +22,9 @@ top_left_y = offy + scale_y * mercator_y_transform(math.radians(-mercator_cap)) 
 
 #print(top_left_x, top_left_y)
 #print(top_left_x + size_x, top_left_y+size_y)
+
+def complexless_power(x, y):
+	return copysign(abs(x) ** y, x)
+	
+def transform_latitude(x):
+	return complexless_power(-mercator_y_transform(radians(x)) * scale_y * 1.3, 0.999) + offy
