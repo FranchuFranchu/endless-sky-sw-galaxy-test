@@ -1,13 +1,59 @@
+galaxy "Perlimian Trade Route 3248"
+	pos 198277.7154667969 250134.53021245028
+	sprite "galaxy images/Perlimian Trade Route 3248"
 
-galaxy "Hydian Way 1"
-	pos 198026 249872
-	sprite "galaxy images/hydian way 1"
-	
-galaxy "Hydian Way 2"
-	pos 199108 248723
-	sprite "galaxy images/Hydian Way 2"
+galaxy "Perlimian Trade Route 3263"
+	pos 199110.24190429688 249887.35557951973
+	sprite "galaxy images/Perlimian Trade Route 3263"
 
+galaxy "Hydian Way 3276"
+	pos 198094.66771875 249812.2503804237
+	sprite "galaxy images/Hydian Way 3276"
 
+galaxy "Vaathkree Trade Corridor 3286"
+	pos 198475.08238710937 249881.14047144318
+	sprite "galaxy images/Vaathkree Trade Corridor 3286"
+
+galaxy "Hydian Way 838"
+	pos 198959.45630859377 248877.92624488394
+	sprite "galaxy images/Hydian Way 838"
+
+galaxy "Byss Run 847"
+	pos 197511.2655738281 250878.38919331194
+	sprite "galaxy images/Byss Run 847"
+
+galaxy "Corellian Run 869"
+	pos 197956.63559941406 250883.4028041709
+	sprite "galaxy images/Corellian Run 869"
+
+galaxy "Rimma Trade Route 878"
+	pos 197733.00820488282 251741.31689573856
+	sprite "galaxy images/Rimma Trade Route 878"
+
+galaxy "Hydian Way 889"
+	pos 198255.69246152346 251912.283156582
+	sprite "galaxy images/Hydian Way 889"
+
+galaxy "Corellian Run 900"
+	pos 198804.76521914062 251953.75042936293
+	sprite "galaxy images/Corellian Run 900"
+
+galaxy "Corellian Run 983"
+	pos 199009.3106097656 252209.2936228012
+	sprite "galaxy images/Corellian Run 983"
+
+galaxy "Corellian Run 998"
+	pos 199258.4838328125 252486.82982524906
+	sprite "galaxy images/Corellian Run 998"
+
+galaxy "Corellian Run 1009"
+	pos 199649.48183847655 252871.12326787415
+	sprite "galaxy images/Corellian Run 1009"
+
+galaxy "Corellian Run 1026"
+	pos 199258.4838328125 252486.82982524906
+	sprite "galaxy images/Corellian Run 1026"
+ 
 
 galaxy "ui/sw_hyperlanes_0_0"
 	pos 194325.0 246697.82115639973
@@ -5709,9 +5755,6 @@ system Capella
 	government Uninhabited
 	habitable 600
 	belt 1500
-	link Aldebaran
-	link Menkalinan
-	link Procyon
 	object Capella
 		sprite planet/cloud6
 		distance 500
@@ -8423,7 +8466,6 @@ system Edusa
 	government Uninhabited
 	habitable 600
 	belt 1500
-	link Arculus
 	object Edusa
 		sprite planet/cloud6
 		distance 500
@@ -8664,7 +8706,6 @@ system Entralla
 	link Bextar
 	link Capza
 	link Endoraan
-	link Nocte
 	object Entralla
 		sprite planet/cloud6
 		distance 500
@@ -15529,10 +15570,6 @@ system Naos
 	government Uninhabited
 	habitable 600
 	belt 1500
-	link Aludra
-	link Avior
-	link Regor
-	link Wezen
 	object Naos
 		sprite planet/cloud6
 		distance 500
@@ -21526,7 +21563,6 @@ system Terminus
 	government Uninhabited
 	habitable 600
 	belt 1500
-	link Limen
 	object Terminus
 		sprite planet/cloud6
 		distance 500
@@ -64140,9 +64176,6 @@ system Membulem
 	pos 190949.7707371795 244272.1880030455
 	government Coalition
 	habitable 2201.68
-	link "Sol Arach"
-	link Pelubta
-	link Gupta
 	asteroids "large metal" 1 2.376
 	trade Clothing 322
 	trade Electronics 758
@@ -79124,7 +79157,6 @@ system Sronk
 system Stalimur
 	pos 199845.1121794872 249410.11198644267
 	habitable 4270
-	link " Erediss"
 	link Brigia
 	link Erediss
 	asteroids "small rock" 8 3.0212

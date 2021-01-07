@@ -11,17 +11,18 @@ galaxy "{name}"
 	pos {x} {y}
 	sprite "{filename}"
 '''
-z = 4
+z = 1
 
 pixel_x = int(common.size_x / z ** 2)
 pixel_y = int(common.size_y / z ** 2)
 	
-for x in range(0, z ** 2):
-	for y in range(0, z ** 2):
+for x in range(0, z ** 2+1):
+	for y in range(0, z ** 2+1):
 		for format, filename in (
-			(fmt, f"images/ui/sw_hyperlanes_{x}_{y}.png"),
-			(sector_fmt, f"images/ui/sw_sectors_{x}_{y}.png"),
+			(fmt, f"dev_images/ui/sw_hyperlanes_{x}_{y}.png"),
+			(sector_fmt, f"dev_images/ui/sw_sectors_{x}_{y}.png"),
 		):
+			print("Downloading")
 			download_image(format.format(z=z, x=x, y=y), filename)
 			filename = filename[len("images/"):]
 			filename = filename[:-len(".png")]
@@ -36,4 +37,4 @@ for x in range(0, z ** 2):
 
 from os import system
 
-system(f'mogrify -auto-orient -thumbnail {pixel_x}x{pixel_y}! "images/ui/sw_*.png"')
+#system(f'mogrify -auto-orient -thumbnail {pixel_x}x{pixel_y}! "dev_images/ui/sw_*.png"')
